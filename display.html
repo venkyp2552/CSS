@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Note
+        1.Block elements:
+            -it will take full space
+            -it wil take height and width
+            -it will form new line
+            ex:
+            h1, p, div, address, ol, ul, li, main ,nav, article, header..
+
+        2.inilne Element:
+            -it will not form new line
+            -it will not take full space
+            -we cant apply heiht and width
+            ex:
+            a, button, input, img, select,label, i etc...
+
+        3.inline-block:
+            -not start new line
+            -not take full width
+            -we can apply h & w
+        -->
+
+    <style>
+        /* h1 {
+            border: 1px solid red;
+            height: 100px;
+            width: 200px;
+        } */
+
+        p {
+            border: 1px solid blue;
+            height: 100px;
+            width: 200px;
+        }
+
+        i {
+            border: 1px solid rgb(166, 255, 0);
+            width: 300px;
+            height: 500px;
+        }
+
+        a {
+            border: 1px solid rgb(166, 255, 0);
+            width: 300px;
+            height: 500px;
+        }
+
+        /* what if we want to give height and width for inline elements for that we have a property called display */
+
+        i {
+            display: inline-block;
+            width: 300px;
+            height: 500px;
+            border: 1px solid rgb(255, 217, 0);
+        }
+
+        h1 {
+            /* display: inline; */
+            border: 1px solid red;
+            height: 100px;
+            width: 200px;
+            /* here we cant apply bcz we made that h1 as a inline element */
+            /* if we want to apply h and w we can make that into inline-block */
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>block level</h1>
+    <p>block level</p>
+    <i>inline level</i>
+    <a href="">inline style</a>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #div {
+            border: 1px solid red;
+            width: 600px;
+            height: 200px;
+        }
+
+        #one {
+            border: 1px solid blue;
+            width: 150px;
+            height: 160px;
+            background-color: blue;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        #two {
+            border: 1px solid blue;
+            width: 150px;
+            height: 160px;
+            background-color: green;
+            margin: 20px;
+            display: inline-block;
+            position: relative;
+            /* Relative value means it will occupy allocated space(it will reserve that place for him self) in that premises it will not allow another elemets to take that place */
+            top: 50px;
+            left: 50px;
+        }
+
+        #three {
+            border: 1px solid blue;
+            width: 150px;
+            height: 160px;
+            background-color: yellow;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+
+</body>
+
+</html>
